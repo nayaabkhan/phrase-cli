@@ -1,0 +1,56 @@
+#!/usr/bin/env node
+
+// Script credits:
+// https://github.com/evanw/esbuild/blob/master/lib/npm/node-platform.ts
+
+var os = require('os')
+
+var availableUnixPacks = {
+  'linux ia32': 'phrase-cli-linux-32',
+  'linux x64': 'phrase-cli-linux-64',
+  'linux arm': 'phrase-cli-linux-arm',
+  'darwin x64': 'phrase-cli-macos-64',
+  'darwin arm64': 'phrase-cli-macos-arm64',
+}
+
+var availableWinPacks = {
+  'win32 ia32': 'phrase-cli-windows-32',
+  'win32 x64': 'phrase-cli-windows-64',
+}
+
+function pkgAndSubpathForCurrentPlatform() {
+  let pkg
+  let subpath
+  let platformKey = `${process.platform} ${os.arch()}`
+
+  if (platformKey in availableWinPacks) {
+    pkg = availableWinPacks[platformKey]
+    subpath = 'bin/phrase.exe'
+  } else if (platformKey in availableUnixPacks) {
+    pkg = availableUnixPacks[platformKey]
+    subpath = 'bin/phrase'
+  } else {
+    throw new Error(`Unsupported platform: ${platformKey}`)
+  }
+
+  return { pkg, subpath }
+}
+
+function generateBinPath() {
+  const { pkg, subpath } = pkgAndSubpathForCurrentPlatform()
+
+  let binPath
+  try {
+    binPath = require.resolve(`${pkg}/${subpath}`)
+  } catch (e) {
+    throw e
+  }
+
+  return binPath
+}
+
+var binPath = generateBinPath()
+
+require('child_process').execFileSync(binPath, process.argv.slice(2), {
+  stdio: 'inherit',
+})

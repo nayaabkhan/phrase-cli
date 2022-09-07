@@ -24,5 +24,8 @@
     "phrase-cli-windows-32": "2.5.1-alpha",
     "phrase-cli-windows-64": "2.5.1-alpha"
   },
+  "files": [
+    "bin/phrase"
+  ],
   "license": "MIT"
 }
