@@ -1,0 +1,17 @@
+{
+  "name": "phrase-cli-linux-32",
+  "version": "2.5.1-alpha",
+  "description": "The Linux 32-bit binary for phrase-cli.",
+  "repository": "https://github.com/nayaabkhan/phrase-cli",
+  "license": "MIT",
+  "preferUnplugged": false,
+  "engines": {
+    "node": ">=12"
+  },
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "ia32"
+  ]
+}

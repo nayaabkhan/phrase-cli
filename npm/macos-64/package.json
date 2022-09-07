@@ -1,0 +1,17 @@
+{
+  "name": "phrase-cli-macos-64",
+  "version": "2.5.1-alpha",
+  "description": "The macOS 64-bit binary for phrase-cli.",
+  "repository": "https://github.com/nayaabkhan/phrase-cli",
+  "license": "MIT",
+  "preferUnplugged": false,
+  "engines": {
+    "node": ">=12"
+  },
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ]
+}

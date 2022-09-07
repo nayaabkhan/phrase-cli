@@ -1,0 +1,17 @@
+{
+  "name": "phrase-cli-windows-32",
+  "version": "2.5.1-alpha",
+  "description": "The Windows 32 binary for phrase-cli.",
+  "repository": "https://github.com/nayaabkhan/phrase-cli",
+  "license": "MIT",
+  "preferUnplugged": false,
+  "engines": {
+    "node": ">=12"
+  },
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "ia32"
+  ]
+}
