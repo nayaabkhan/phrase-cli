@@ -1,6 +1,6 @@
 {
   "name": "phrase-cli-linux-32",
-  "version": "2.5.1-alpha",
+  "version": "2.5.1-alpha1",
   "description": "The Linux 32-bit binary for phrase-cli.",
   "repository": "https://github.com/nayaabkhan/phrase-cli",
   "license": "MIT",

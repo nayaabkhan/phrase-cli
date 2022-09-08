@@ -1,6 +1,6 @@
 {
   "name": "phrase-cli",
-  "version": "2.5.1-alpha",
+  "version": "2.5.1-alpha1",
   "description": "Package to ship the Phrase CLI through NPM",
   "repository": "https://github.com/nayaabkhan/phrase-cli",
   "bin": {
@@ -16,13 +16,13 @@
     "publish-windows-64": "cd npm/windows-64 && npm publish"
   },
   "optionalDependencies": {
-    "phrase-cli-linux-32": "2.5.1-alpha",
-    "phrase-cli-linux-64": "2.5.1-alpha",
-    "phrase-cli-linux-arm": "2.5.1-alpha",
-    "phrase-cli-macos-64": "2.5.1-alpha",
-    "phrase-cli-macos-arm64": "2.5.1-alpha",
-    "phrase-cli-windows-32": "2.5.1-alpha",
-    "phrase-cli-windows-64": "2.5.1-alpha"
+    "phrase-cli-linux-32": "2.5.1-alpha1",
+    "phrase-cli-linux-64": "2.5.1-alpha1",
+    "phrase-cli-linux-arm": "2.5.1-alpha1",
+    "phrase-cli-macos-64": "2.5.1-alpha1",
+    "phrase-cli-macos-arm64": "2.5.1-alpha1",
+    "phrase-cli-windows-32": "2.5.1-alpha1",
+    "phrase-cli-windows-64": "2.5.1-alpha1"
   },
   "files": [
     "bin/phrase"

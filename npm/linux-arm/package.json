@@ -1,6 +1,6 @@
 {
   "name": "phrase-cli-linux-arm",
-  "version": "2.5.1-alpha",
+  "version": "2.5.1-alpha1",
   "description": "The Linux Arm binary for phrase-cli.",
   "repository": "https://github.com/nayaabkhan/phrase-cli",
   "license": "MIT",
